@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nyumba</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0f766e">
+</head>
+<script>
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");
+</script>
+<body>
+  <h1>Nyumba</h1>
+  <form id="unitForm">
+    <input id="unit" placeholder="Unit e.g. A1" required>
+    <input id="tenant" placeholder="Tenant name" required>
+    <input id="rent" type="number" placeholder="Rent (KES)" required>
+    <button>Add unit</button>
+  </form>
+  <ul id="list"></ul>
+  <script src="app.js"></script>
+</body>
+</html>
